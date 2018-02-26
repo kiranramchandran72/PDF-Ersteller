@@ -1,0 +1,467 @@
+﻿<!DOCTYPE HTML>
+<head>
+    <title></title>
+    <style type="text/css">
+        /* Set Page Size Here */
+	   @page {size:210mm 139.7mm;
+			margin-left:15mm;
+			margin-right:10mm;
+			margin-top:21mm;
+			margin-bottom:13mm;
+			orphans:4; widows:2;
+			}	
+        /* Set Font Here */
+        * {
+            font-family: Calibri,Arial,Tahoma !important;
+        }
+
+		
+		
+        /**{-webkit-print-color-adjust: exact;}*/
+
+        [data-value="0.00"], [data-value="0.0"], [data-value="0"], [data-value="0.000"] {
+            display: none;
+        }
+
+        table {
+            font-family: Arial, Tahoma, Sans-Serif;
+            font-size: 12px;
+            border-spacing: 0px;
+            color: black;
+        }
+
+        .tdclass {
+            padding-top: 3px;
+            font-size: 12px;
+            font-family: Calibri;
+            color: black;
+        }
+
+        .tdalignclass {
+            padding-top: .5em;
+            padding-bottom: .5em;
+            font-size: 12px;
+            font-family: Calibri;
+            text-align: right;
+        }
+
+        .Line {
+            border-top: 1px solid gray;
+        }
+
+        .LeftBillDiv {
+            padding: 5px;
+            color: black;
+        }
+
+        .RightBillDiv {
+        }
+
+        .BGShade {
+            height: 35px;
+            width: 25%;
+            background-color: #6b7173;
+            color: White;
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        .SubTitle {
+            font-size: 16px;
+            color: Black;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .LeftLabel {
+            width: 70px;
+            display: inline-block;
+			 font-weight: bold;
+			 font-size: 12px !important;
+        }
+
+        .RightValue {
+            font-size: 12px;
+        }
+
+        .BillTitle {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .DuplBill {
+            font-size: 12px;
+            color: red;
+            font-weight: bold;
+        }
+
+        #tblproList {
+            width: 100% !important;
+        }
+
+            #tblproList thead tr {
+                background-color: #6b7173 !important;
+            }
+
+        table#tblproList tr td {
+            padding: 2px !important;
+            font-weight: normal;
+            color: black;
+			line-height:10px;
+        }
+		
+		table#tblproList tr th {
+		   line-height:10px !important;
+		   padding:0px !important;
+		}
+
+        .FS14 {
+            font-size: 12px !important;
+        }
+
+        .FS16 {
+            font-size: 12px !important;
+        }
+
+        .FS20 {
+            font-size: 15px !important;
+        }
+
+        .TAR {
+            text-align: right !important;
+        }
+
+        .TAL {
+            text-align: left !important;
+        }
+
+        .BLD {
+            font-weight: bolder !important;
+        }
+
+        .GAmount {
+            border: none !important;
+            font-weight: bold !important;
+            width: auto !important;
+            outline-style: none !important;
+            outline: 0 !important;
+            width: 25% !important;
+            text-align: right !important;
+            background-color: transparent;
+        }
+
+        .LeftBillDiv table td {
+            padding: 5px !important;
+        }
+
+        .BGAmount {
+            font-size: 22px !important;
+            font-weight: bolder !important;
+        }
+
+        .PrntCancel {
+            color: #b30000;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .adress{
+            padding: 3px 0px 0px 3px;
+            max-width: 80%;
+            white-space: pre-line;
+            font-size: 11px;
+        }
+		
+		@media print
+		{
+			
+			#DummyHeader { height:120px;}
+			#HeaderDiv{position:fixed;height:110px;top:0; left:0;}	
+			#DivFirstPage{margin-top:-130px;}
+			thead { display: table-header-group }
+			tfoot { display: table-row-group }
+			
+			#tblproList {
+				page-break-inside:auto; 
+				width:100% !important;
+				margin-top:100px;
+			}
+			
+			#tblproList tr    
+			{ 
+			  /*display: table-row-group;*/
+			  page-break-inside:avoid; 
+			  page-break-after:auto;
+			  page-break-before:auto;
+			}
+			
+			
+		}
+    </style>
+
+    <script type="text/javascript">
+        function printpreview() {
+            window.print();
+        }
+	</script>
+</head>
+<body style="width:100%;" onload="return printpreview();">
+<div id="DivFirstPage" style=''>
+		<div id="HeaderDiv">
+        <!--[HeaderStart]-->
+		<table style="width:100%;">
+                <tr>
+                    <td colspan="3" align="center">
+                        <span class="BillTitle">[Billtype]</span><br />
+                        <span class="DuplBill">[DuplicateBill]</span>
+                        <span class="PrntCancel">[Cancel]</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="tdclass" style="width: 20%;" align="center">
+                        <table width="100%">
+                            <tr>
+                                <td class="tdclass" style="width: 55%;">
+                                    <span class="LeftLabel">Patient ID </span> <span class="RightValue">: [Patient Id]</span>
+                                </td>
+								<td class="tdclass">
+                                    <span class="LeftLabel">Patient Name </span>
+                                    <span class="RightValue">: [PatientName]</span>
+                                </td>                               
+                            </tr>
+                         
+                            <!--============= Added by Joel to show age and sex(20-03-2017) ========-->
+                            <tr>
+                                <td class="tdclass" style="width: 55%;">
+                                    <span class="LeftLabel">Age/Sex</span> <span class="RightValue">: [Age/Sex]</span>
+                                </td>
+                                <td class="tdclass">
+                                    <span class="LeftLabel" data-value=[tGuardian]>Guardian</span>
+                                    <span class="RightValue" data-value=[tGuardian]>: [tGuardian]</span><br />                                                                   
+                                </td>
+                            </tr>
+                            <!--------------------------------------------------------------------------------------->
+                            <tr>
+                                <td class="tdclass"  style="width: 15%; vertical-align:top;">
+                                    <span class="LeftLabel" data-value=[contactno]>Contact</span>
+                                    <span class="RightValue" data-value=[contactno]>: [contactno]</span>  <br/>  
+									<span class="LeftLabel" data-value=[tAddress1]>Address</span>
+                                    <span class="RightValue adress" data-value=[tAddress1] style="white-space:normal; height">: [tAddress1]</span>
+                                </td>
+								<td class="tdclass" style="vertical-align:top;">
+                                    <span class="LeftLabel">Bill No </span> <span class="RightValue">: [Bill No]</span><br/>
+									<span class="LeftLabel">Bill Date </span> <span class="RightValue">: [Bill Date]</span> <br/>
+									 <span class="LeftLabel" data-value=[Ward]>Ward No </span> <span class="RightValue" data-value=[Ward]>: [Ward]</span><br/>
+									<span class="LeftLabel" data-value=[bed]>Bed No</span> <span class="RightValue" data-value=[bed]>: [bed]</span>
+                                </td>                               
+                            </tr>                            
+
+                           <!-- <tr data-value=[tAddress1]>
+                                <td colspan="2" class="tdclass" style="width: 15%;">
+                                   
+                                </td>
+                            </tr> -->
+                            
+                            <tr data-value=[cardno]>                               
+								  <td class="tdclass">
+                                    <span class="LeftLabel">[cardname]</span>
+                                    <span class="RightValue">: [cardnumber]</span>
+                                </td>
+                                <td class="tdclass">
+                                   
+                                </td>
+                            </tr>
+                            <tr>                                
+                            </tr>
+                            <!--============= Added by Joel to show company(20-03-2017)=======-->
+                            <tr>
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Company</span> <span class="RightValue">[Company]</span>
+                                </td>
+                                <td class="tdclass"></td>
+                            </tr>
+                            <!-- ----------------------------------------------------------------------------- -->
+
+                            <tr>                                
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+		</table>
+        <!--[HeaderEnd]-->
+		</div>
+        
+<table style='width:100%'>
+<thead>
+<tr> 
+  <th>
+		<div id="DummyHeader">						
+				  
+		</div>
+			
+	  </th>
+	</tr>
+  </thead>
+  <tbody>
+	  <tr>
+		<td>	
+        <!--[ContentStart]-->	
+		[item List]
+		  
+		<table id="BillFoot" style="width:100%">
+			<tfoot>
+                <tr>
+                    <td></td>
+                    <td class="Line" style="border-right: 1px solid Gray;vertical-align:top; width:35%">
+                        <table width="95%" align="left" class="LeftBillDiv">                            
+                            <tr data-value=[copay]>
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Copayment</span>
+                                </td>
+                                <td class="tdalignclass">
+                                    <span class="RightValue FS14">[copay]</span>
+                                </td>
+                            </tr>                          
+
+                            <tr data-value="[cashamt]" style="line-height:4px">
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Cash </span>
+                                </td>
+                                <td class="tdalignclass">
+                                    <span class="RightValue FS7" style="font-weight:normal !important;">[cashamt] </span>
+                                </td>
+                            </tr>
+
+                            <tr data-value="[Adavnce Amount]">
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Advance </span>
+                                </td>
+                                <td class="tdalignclass">
+                                    <span class="RightValue FS7" style="font-weight:normal !important;">[Adavnce Amount] </span>
+                                </td>
+                            </tr>
+
+                            <tr data-value="[cheqamt]" style="line-height:4px">
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Cheque </span>
+                                </td>
+                                <td class="tdalignclass">
+                                    <span class="RightValue FS7" style="font-weight:normal !important;">[cheqamt] </span>
+                                </td>
+                            </tr>
+
+
+                            <tr data-value="[cardamt]" style="line-height:4px">
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Card </span>
+                                </td>
+                                <td class="tdalignclass">
+                                    <span class="RightValue FS7" style="font-weight:normal !important;">[cardamt] </span>
+                                </td>
+                            </tr>
+
+                            <tr data-value="[servicetaxamt]" style="line-height:4px">
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Service Tax</span><span class="LeftLabel" style="margin-left: 46%; margin-top: -2%;">[taxper]</span>
+                                </td>
+                                <td class="tdalignclass">
+                                    <span class="RightValue FS7" style="font-weight:normal !important;">[servicetaxamt] </span>
+                                </td>
+                            </tr>
+
+
+                            <tr data-value="[totalbillamt]">
+                                <td class="tdclass">
+                                    <span class="LeftLabel">Total</span>
+                                </td>
+                                <td class="tdalignclass">
+                                    <span class="RightValue FS7">[totalbillamt] </span>
+                                </td>
+                            </tr>
+
+                            <tr data-value="[Payable Amount]">
+                                <td colspan="2" class="tdclass">
+                                    <span class="LeftLabel"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td colspan="2" style="vertical-align:top;">
+                        <table width="100%" style=";">
+                            <tr rowspan="1">                              
+                                <td style="text-align:right;" class="Line"/>
+                                    <table style="width:100% " >
+                                        <tr data-value="[Net Amount]">
+                                            <td class="tdclass" style="width:73%; white-space:nowrap">Total: (Rs)</td>
+                                            <td>
+                                                <span class="FS20 GAmount TAR">[totalbillamt] </span>                                                
+                                            </td>
+                                        </tr>
+                                        <tr data-value="[InsuredAmount]">
+                                            <td style="width:40%; white-space:nowrap">Insured Amount</td>
+                                            <td>
+                                            <span class="FS16 GAmount TAR">[InsuredAmount] </span>                                             
+                                            </td>
+                                        </tr>                                        
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="height: 55px;">
+                                <td colspan="2">
+                                    <span class="tdclass SubTitle">Insurance /Corporate</span>
+                                </td>
+                            </tr>
+                            <tr style="height:auto;" data-value=[Crupees]>
+								<td colspan="2" class="tdclass">
+								</td>
+							</tr>
+                        </table>
+                        <!--[ContentEnd]-->
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3" class="Line"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+					
+					</td>
+                    <td></td>
+                </tr>
+                <tr style="font-size: 10px;"  class="Line">
+					<td></td>
+                    <td colspan="3">
+						<table style="width:100%; vertical-align:top;">
+							<tr>
+							  <td  style="width:70%; vertical-align:top;">
+								<span class="RightValue FS14 TAL">Rupees <b>[rupees]</b> only </span>
+							</td>
+							<td align="center">
+								Signature & Stamp<br />
+								<strong style="font-size: 14px;">[UserName]</strong><br />
+								&nbsp;Cashier
+							</td>
+							</tr>
+                      </table>
+					</td>
+                    </tr>
+					<tr>
+						<td align="center"  colspan="4">
+								<span>End of Bill</span>
+						</td>
+					</tr>
+				</tfoot>
+           </table>
+			</td>
+		</tr>
+	 </tbody>
+ </table>
+ </div>
+</body>
+</html>

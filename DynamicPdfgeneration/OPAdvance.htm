@@ -1,0 +1,171 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="OPAdvancePrint.css" rel="stylesheet" type="text/css" />
+	<!--<script type="text/javascript">
+		function printpreview(){
+		window.print();
+		}
+	</script>-->
+</head>
+<body align="center">
+
+    <center>
+    <!--[HeaderStart]-->
+        <table style="width:100%;">
+            <tr>
+                <td colspan="3" style="color :black ; font-size :medium ;text-align:center ; font-weight :bold ;">
+                    <br />
+                    <span> [Caution] ADVANCE RECEIPT </span>
+                    <span class="PrntCancel">[Cancel]</span>                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="tdclass" style="width:15%;">
+                    <table class="PatientInfo">
+                        <tr>
+                            <td class="tdclass" style="width:70px;">
+                                <span class="leftLabel"> Patient ID </span>
+                            </td>
+                            <td class="tdclass" style="width:35%">
+                             <span class="RightValue" style="font-size:14px; font-weight:bold;">: [Patient Id]</span>
+                            </td>
+                            <td class="tdclass" style="width:10%;">
+                                <span class="leftLabel" >Name  </span>
+                            </td>
+                            <td class="tdclass" style="width:40%">
+                              <span class="RightValue" style="font-size:14px; font-weight:bold;">: [PatientName]</span>
+							
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdclass">
+                                <span class="leftLabel">Age/Sex </span>
+                            </td>
+                            <td class="tdclass">
+                                <span class="RightValue">: [Age]</span>
+                            </td>
+                            <td class="tdclass">
+                                <span class="leftLabel">Receipt No  </span>
+                            </td>
+                            <td class="tdclass">
+                                <span class="RightValue">: [Advance No]</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdclass">
+								<span class="LeftLabel" data-value=[tGuardian]>Guardian</span>
+                            </td>
+                            <td class="tdclass" style="vertical-align:top;">
+								<span data-value=[tGuardian] class="RightValue">: [tGuardian]</span> 
+                            </td>
+							<td class="tdclass" style="vertical-align:top;">
+                                <span class="leftLabel">Receipt Date  </span> <br/><br/><br/>
+								
+                            </td>
+                            <td class="tdclass" style="vertical-align:top;">
+                                <span class="RightValue">: [Advance Date]</span>
+                            </td>							         
+                        </tr>
+                        <tr>
+                            <td class="tdclass">
+                                <span class="leftLabel">Contact No  </span>
+                            </td>
+                            <td class="tdclass">
+                                <span class="RightValue">: [contactno]</span>
+                            </td>
+							<td class="tdclass">
+								<span class="leftLabel" data-value=[Room]>Room No </span>
+                            </td>
+                                                        
+                            <td class="tdclass">
+								<span class="RightValue" data-value=[Room]>: [Room]</span>
+                            </td>							                            
+                        </tr>
+                        <tr data-value=[wardbed]>
+                            <td class="tdclass">
+                                <span class="leftLabel">Ward  </span>
+                            </td>
+                            <td class="tdclass">
+                                <span class="RightValue">: [Ward]</span>
+                            </td>
+							<td class="tdclass">
+								<span class="leftLabel" >Bed </span>
+                            </td>
+                                                        
+                            <td class="tdclass">
+								<span class="RightValue" >: [Bed]</span>
+                            </td>							                            
+                        </tr>
+						<tr>
+							 <td class="tdclass">
+                                <span class="leftLabel">Address  </span>
+                            </td>
+							 <td colspan="3" class="tdclass">
+                               <div class="adress">: [Address]</div>
+                            </td>
+						</tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    <!--[HeaderEnd]--> 
+
+    <!--[ContentStart]-->
+           [item List]
+     <table style="width:100%;">              
+            <tr>
+                <td colspan="2" style="width:13%;padding-top: 5px;">
+                    <span>Recieved With thanks from :[PatientName]</span>
+                    <br /><br />
+                    <span style="font-weight: bold;font-size: 13px;"> Remarks :</span><span>[Remarks]</span>
+                    <br />
+                    [cautionitemdetls]
+
+                </td>
+                <td style="width:5%;">
+                    <table style="width:100%">
+                        <tr>
+                            <td style="font-weight: bold;font-size: 13px;width:60%;text-align:right;">Total Amount : </td>
+                            <td style="font-weight: bold;font-size: 13px;text-align :right ;width:40%">[Total]</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <!--<tr data-value=[BankName]>
+                <td colspan="3">Bank Name : <b>[BankName]</b></td>
+            </tr>-->
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr style="height :1px;" class="line">
+                <td colspan="3"></td>
+            </tr>
+            <tr style="font-size:10px;">
+                <td colspan="2" align="center" style="text-align:left;">
+                    In Words : <span style="font-weight: bold;font-size: 13px;"> Rupees [rupees] </span>
+                </td>
+                <td align="center" style="padding-top: 1%;padding-bottom: 1%;text-align: right;">
+                    Cashier
+                </td>
+            </tr>
+            <tr style="height :1px;" class="line">
+                <td colspan="3"></td>
+            </tr>
+            <tr style="font-size:10px;">
+                <td colspan="1" style=" padding-top :1%;">
+                    <!--<span>Counter :[counter]</span>-->
+                    <span>This receipt should be produced at the time of [WordofSettlement]. Thank you.</span>
+                </td>
+                <td colspan="2" align="right" style="padding-top :1%;">
+                    <span>User :[user]</span>
+                </td>
+            </tr>
+        </table>
+     <!--[ContentEnd]-->
+    </center>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style type="text/css">
+        p
+        {
+            /*font-size: 14px !important;*/
+            word-spacing:10px !important;
+            text-align:justify !important;
+        }
+        .DisHead
+        {
+            font-weight: bold;
+            /* font-size: 12px !important;*/
+             font-style:italic;
+             margin-top:25px;
+             margin-bottom:15px;
+        }
+        table tr td
+        {
+            font-size: 13px !important;
+        }
+        #TblInfo tr td
+        {
+            font-size: 13px !important;
+        }
+        .TitleFont
+        {
+            font-size: 12px !important;
+        }
+        .content
+        {
+            margin-left:0px !important;
+            font-size: 13px;
+        }
+        div
+        {
+            background-color:#fff !important;
+        }
+       
+       #DivGroup ~ table tbody tr:nth-child(1)
+          {
+              font-weight:bold !important;
+          }
+          
+          #DivGroup ~ table 
+          {
+              width:90% !important;
+          }
+          
+          #LabTable  > table tbody tr:nth-child(1)
+          {
+              font-weight:bold !important;
+          }
+          
+          #LabTable  > table 
+          {
+              width:90% !important;
+          }
+          
+          .DisHead ~ p:not(.DisHead)
+          {
+              margin-left:2%;
+          }
+          
+          .DisHead ~ div
+          {
+              margin-left:2% !important;
+          }
+          #DivDSPrepared > div
+          {
+              display:none;
+          }
+          #DivDSPrepared
+          {
+              border:none !important;
+          }
+          #TblDisSummary
+          {
+              display:none;
+          }
+         
+		 table tr > td.tddisbilldate
+         {
+             display:none !important;
+         }
+         h4.TableHead
+         {
+             background-color:White;
+             width:90%;
+         }
+         table.TableData
+         {
+             width:90% !important;
+         }
+         
+         table.TableData tr td.TableHead
+         {
+             background-color:White !important;
+         }
+         #divLabResult.clsfonsizerad
+         {
+             width:90%;
+             margin-left:5%;
+         }
+         #divRadiologyResults ~p.DisHead
+         {
+              margin-left:5%;
+         }
+          #divRadiologyResults ~p.DisHead ~p:not(.DisHead)
+         {
+              margin-left:9%;
+         }
+		
+		/* #TblInfo tr, td{
+			    font-size: medium !important;
+		 }*/
+		 
+				 
+		.DisHead ~ p:not(.DisHead) {
+			    font-size: medium ;
+				line-height: medium ;
+				margin: 0px 20px ;
+		}
+    </style>
+
+</head>
+<body>
+<!--<PageSettings data ="PageSize:A4;Margin:1 0.5 0.75 1;Pagenumber:true;Pagenumberposition:right;linerequired:false;directprint:false;unicodefont:../Fonts/arialuni.ttf;debug:true;" -->
+<!--[ContentStart]-->
+<table style="width: 100%;">
+ <tr>
+     <td style="vertical-align:top; width:100%">
+         <img src="../img/DSHead.png" width="650px" />
+     </td>
+ </tr>
+</table>
+ <!--<div style="height: 20px;">
+    </div>-->
+<p><table width='100%' border='0' class='HeaderStyle' cellspacing='0' cellpadding='1'> <tbody>
+<tr >
+<th style='text-align:center;font-size: medium;/*background-color: rgb(39, 147, 246);*/' colspan='6'><u><b>DAMA SUMMARY</b></u></th>
+</tr></tbody>
+</table>
+</p>
+
+<div style="height: 10px;">
+    </div>
+
+<p><table id="TblInfo" width="100%" border="0" cellpadding="3">
+    <tbody>
+        <tr valign="top">
+            <td style="white-space:nowrap;width:16%;">
+                Patient Name
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td style="text-transform:lowercase !important; width:56%;">
+                <strong>MR. RAMU.B  </strong>
+            </td>
+            <td style="width:15%;">
+                Patient ID
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td style="width:13%;">
+                <strong> 1117122082</strong>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                Age/Sex
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                <strong> 56 Years /Male</strong>
+            </td>
+            <td>
+                MLC
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                <strong> No</strong>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                Guardian
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td style="text-transform:uppercase;">
+                <strong> S/O.MR.BANGARU NAIDU</strong>
+            </td>
+            <td>
+                Phone
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                 7598506475
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                Address
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td style='padding-left:5px;'>
+                 PAPPIREDDIPATTI T.K, ADIKARAPATTY, DHARMAPURI, TAMIL NADU, INDIA 
+            </td>
+            <td>
+                Pin Code
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                 636905
+            </td>
+        </tr>
+        <tr valign="top">
+            <td colspan="6" style="border-bottom: 1px solid #000;">
+            </td>
+        </tr>
+        <tr valign="top">
+            <td colspan="6" style="height: 08px;">
+            </td>
+        </tr>
+		</tbody>
+		</table>
+		<table width="100%" border="0" cellpadding="3">
+		<tbody>
+        <tr valign="top">
+            <td class="Line2" style="white-space:nowrap;width:16%;">
+                Admitted On
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td class="Line2" style="text-transform:lowercase !important; width:39%;">
+                 14/12/2017 10:46:49 AM
+            </td>
+            <td class="Line2" style="width:15%;">
+               Admitting Unit
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td class="Line2" style="width:30%;">
+                <span class="tddisbilldate" style="white-space: normal;"> PROF. S RAJASEKARAN</span>
+            </td>
+        </tr>
+        <tr valign="top" data-value='1'>
+            <td style="white-space:nowrap;">
+                Discharged On
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                 14/12/2017 04:23:42 PM 
+            </td>
+            <td>
+                Doctor
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                 DR.SUNDARARAJAN S.R<br/>
+
+            </td>
+        </tr>
+		<tr valign="top" data-value='0'>
+            <td class="Line2">
+                 Expired on
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td class="Line2">
+                 
+            </td>
+            <td>
+                Doctor
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                 DR.SUNDARARAJAN S.R<br/>
+
+            </td>
+        </tr>
+        <tr valign="top">
+            <td style="white-space: nowrap;">
+                Ward/ Room
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                 2 FLOOR SPL GW WEST / 2SWGW-28
+            </td>
+            <td>
+            </td>
+			<td style="width:1%;">
+                
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                IP Number
+            </td>
+			<td style="width:1%;">
+                :
+            </td>
+            <td>
+                 1117022706
+            </td>
+            <td>
+            </td>
+			<td style="width:1%;">
+                
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- Death Date : , Check out Date :  -->
+<table id='TableLine' width='100%' style='padding-bottom: 7px;'>
+<tr>
+<td style='width:30%;border-top:1px solid rgb(231, 231, 231);'></td>
+</tr>
+</table>
+</p>
+
+<p><p class='DisHead'>Diagnosis</p>
+<p  class='content'>
+<p style="text-align:justify;">I have&nbsp;been&nbsp;explained about the rules &amp;consequences of the compicated surgery that is done at Ganga hospital. I have my full cocern for the surgery to be dont an kerala india pakisthan africa australia. you are what you are. Isuues are there not. We will check the emergency issues. Knee AP lateral issue can be found quickly and emergency</p> 
+
+
+<p>8/2/2014: DEBRIDEMENT AND PSS RIGHT ELBOW</p>
+
+<p> </p>
+
+<p>Under all aseptic precautions the lacerated wound of about 3 x 1 cm was debrided and explored. There was deep laceration of triceps fascia which was repaired with 2-0 vicryl. The skin was primarily sutured with 3-0 ethilon and the limb was immobilised by long arm back slab with the elbow in 45 deg flexion.</p>
+
+<p> </p>
+
+<p> </p>
+
+<p>12/2/2014: PFN A2 NAILING RIGHT FEMUR</p>
+
+<p> </p>
+
+<p>Under combined spinal and epidural anaesthesia, patient positioned supine over fracture table, boot traction given, parts painted and draped. Under strict aseptic conditions incision, was made over supratrochanteric region, through lateral approach pyriformis fossa was identified, entry point was made using awl and hand reamer. Rasping of entry point was done and fixation was done using 10 x 380 size PFN A2 nail after proper measurement. Nail is fixed by using 105 mm size proximal screw. Distal locking is done using 2 screws. Fracture reduction and implant position was checked under C-arm and found to be satisfactory. Wash given. Wound closed in layers under negative suction drain. Sterile dressing done.</p>
+
+
+</p>
+</p>
+
+
+
+
+
+
+<!--[ContentEnd]-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\Datamate.Mediware.PdfGenerator.dll
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\Datamate.Mediware.PdfGenerator.pdb
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\Datamate.Mediware.PdfGenerator.xml
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\itextsharp.dll
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\itextsharp.xmlworker.dll
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\itextsharp.xml
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.Resources.resources
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware..PdfGenerator.vbproj.GenerateResource.Cache
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.dll
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.xml
+D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.pdb
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\Datamate.Mediware.PdfGenerator.dll
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\Datamate.Mediware.PdfGenerator.pdb
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\bin\Debug\Datamate.Mediware.PdfGenerator.xml
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.Resources.resources
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\GenerateResource.read.1.tlog
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\GenerateResource.write.1.tlog
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.dll
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.xml
+D:\MyProjects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\DatamateFx40.Mediware.CAS.PdfGenerator\obj\Debug\Datamate.Mediware.PdfGenerator.pdb

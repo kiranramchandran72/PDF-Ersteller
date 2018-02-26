@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        .PatientInfo tr td
+        {
+            font-size: 11px !important;
+            padding: 0px !important;
+        }
+        
+        .PatientInfo2 tr td
+        {
+            font-size: 10px !important;
+            padding: 0px !important;
+            height: 12px  !important;
+        }
+        
+        
+        table#tblproList tr td
+        {
+            font-size: 11px !important;
+            height: 18px  !important;
+        }
+        
+        table#tblproList thead tr th
+        {
+            background-color: #ccc !important;
+            font-size: 11px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            white-space:nowrap !important;
+            height: 18px  !important;
+        }
+        
+        .Line
+        {
+            border-top: 1px solid gray;
+        }
+        
+        
+        .GAmount
+        {
+            border: none !important;
+            font-weight: bold !important;
+            font-size:14px;
+            width: auto !important;
+            outline-style: none !important;
+            outline: 0 !important;
+            width: 25% !important;
+            text-align: right !important;
+            background-color: transparent;
+        }
+        .LeftBillDiv tr td
+        {
+            padding: 0px !important;
+            color: black;
+            height:14px;
+        }
+        
+        .PrntCancel
+        {
+            color: #b30000;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .adress
+        {
+            white-space: pre-line;
+            font-size: 11px;
+        }
+        .tdclass
+        {
+            font-size: 10px;
+            color: black;
+            height: 10px !important;
+        }
+        .tdalignclass
+        {
+            text-align: right;
+            font-size: 12px;
+            height: 10px;
+        }
+        
+        .LClass
+        {
+            width: 40%;
+            font-size: 12px;
+            height: 14px;
+            float: left;
+            display: inline-block;
+        }
+        .DClass
+        {
+            width: 60%;
+            font-size: 12px;
+            height: 14px;
+            float: left;
+            display: inline-block;
+        }
+        
+        .LabelText
+        {
+            width: 30%;
+            font-size: 12px;
+        }
+        .DataText
+        {
+            width: 70%;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body style="width: 100%;">
+    <center>
+        <!--<PageSettings data ="PageSize:Custom;Pagewidth:8.27;Pageheight:5.50;Margin:0.5 0.5 0.9 0.6;Landscape:false;Pagenumber:true;Pagenumberposition:left;linerequired:false;debug:false;rotation:90" -->
+        <!--[HeaderStart]-->
+        <table class="PatientInfo" cellpadding="0" cellspacing="0" width="100%" border="0">
+          <tr>
+            <td colspan="2" style="color: black; font-size: medium; text-align: center; font-weight: bold;"><span class="BillTitle">RECEIPT</span><br />
+              <span class="DuplBill"></span> <span class="PrntCancel"></span> </td>
+          </tr>
+        </table>
+
+        <table class="PatientInfo2" width="100%" >
+          <tr>
+            <td class="LabelText">Patient Name</td>
+            <td class="DataText" >: MS. MAY</td>
+	        <td class="LabelText" >Patient ID</td>
+            <td class="DataText" >: 1117113347</td>
+           </tr>
+           <tr>
+  	        <td class="LabelText" >Age/Sex</td>
+            <td class="DataText" >: 20 Y / Female</td>
+	        <td class="LabelText"></td>
+            <td class="DataText" >: <span data-value="0">0</span></td>
+	        </tr>
+           <tr>
+	        <td class="LabelText" >Contact No</td>
+            <td class="DataText" >: <span data-value="9874575451">9874575451</span></td>
+	        <td class="LabelText" >Bill No </td>
+            <td class="DataText" >: OP/CR/220470/2017-18 </td>
+           </tr>
+           <tr>	
+	        <td class="LabelText" >Ward</td>
+            <td class="DataText">: <span data-value="0">0</span></td>
+	        <td class="LabelText">Bill Date</td>
+            <td class="DataText">: 27/11/2017 01:52:36 PM </td>
+	        </tr>
+           <tr>
+	        <td class="LabelText" ></td>
+            <td class="DataText" >: <span  data-value="0"></span></td>
+	        <td class="LabelText" >Bed</td>
+            <td class="DataText" >: <span data-value="0">0</span></td>
+	        </tr>
+           <tr>
+	        <td class="LabelText" >Company</td>
+            <td class="DataText" >: <span data-value="BAJAI ALLIANZ">BAJAI ALLIANZ </span></td>
+	        <td class="LabelText"></td>
+            <td class="DataText" ></td>
+          </tr>
+          <tr>
+            <td colspan="4" style="vertical-align: top;font-size:11px; ">
+	        Address : TEST, AMBARIPET B.O - KHANAPUR, ADILABAD, ANDHRA PRADESH, INDIA, 504202
+	        </td>
+          </tr>
+        </table>
+        
+        <!--[HeaderEnd]-->
+        <!--[ContentStart]-->
+                <table id='tblproList' style='width:100%;'>
+    <thead>
+      <tr style='background-color :#4FCDFF ;height:20px;' >
+        <th align='left' style='width:2px;color:white;padding-top: .5em; padding-bottom: .5em;'>Sl#</th>
+        <th  align='left' style='width:5px;color:white;;padding-top: .5em; padding-bottom: .5em;'>Description</th>
+        <th align='right' style='width:2px;color:white;;padding-top: .5em; padding-bottom: .5em;'>Qty</th>
+        <th align='right' style='width:3px;color:white;;padding-top: .5em; padding-bottom: .5em;'>Unit Price</th>
+        <th  align='right' style='width:3px;color:white;;padding-top: .5em; padding-bottom: .5em;'>Net Amount</th>
+      </tr>
+     </thead>
+     <tbody >
+<tr>
+<td style='width:2px;text-align:left;padding-top: .5em; padding-bottom: .5em;'>1</td>
+<td style='width:5px;text-align:left;padding-top: .5em; padding-bottom: .5em;'>U SLAB - CHILD</td>
+<td style='width:2px;text-align:right;padding-top: .5em; padding-bottom: .5em;'>1</td>
+<td style='width:3px;text-align:right;padding-top: .5em; padding-bottom: .5em;'>325.00</td>
+<td style='width:3px;text-align:right;padding-top: .5em; padding-bottom: .5em;'>325.00</td>
+</tr>
+<tr>
+<td style='width:2px;text-align:left;padding-top: .5em; padding-bottom: .5em;'>2</td>
+<td style='width:5px;text-align:left;padding-top: .5em; padding-bottom: .5em;'>TUBE SLAB - ADULT</td>
+<td style='width:2px;text-align:right;padding-top: .5em; padding-bottom: .5em;'>1</td>
+<td style='width:3px;text-align:right;padding-top: .5em; padding-bottom: .5em;'>500.00</td>
+<td style='width:3px;text-align:right;padding-top: .5em; padding-bottom: .5em;'>500.00</td>
+</tr>
+        </tbody></table>
+
+        <table style="width: 100%; vertical-align: top;">
+            <tr>
+                <td class="Line" style="border-right: 1px solid Gray; vertical-align: top; width: 35%">
+                    <table style="width: 100%;font-size:10px; " align="left" class="LeftBillDiv">
+                        <tr data-value="">
+                            <td class="tdclass">
+                                
+                            </td>
+                            <td class="tdalignclass">
+                                
+                            </td>
+                        </tr>
+                        <tr data-value="0.00">
+                            <td class="tdclass">
+                                Cash
+                            </td>
+                            <td class="tdalignclass" style="font-weight: normal !important; text-align: right;">
+                                0.00
+                            </td>
+                        </tr>
+                        <tr data-value="0.00">
+                            <td class="tdclass">
+                                Advance
+                            </td>
+                            <td style="font-weight: normal !important; text-align: right">
+                                0.00
+                            </td>
+                        </tr>
+                        <tr data-value="0.00">
+                            <td class="tdclass">
+                                Cheque
+                            </td>
+                            <td class="tdalignclass" style="text-align: right">
+                                0.00
+                            </td>
+                        </tr>
+                        <tr data-value="0.00">
+                            <td class="tdclass">
+                                Card
+                            </td>
+                            <td class="tdalignclass">
+                                0.00
+                            </td>
+                        </tr>
+                        <tr data-value="0.00">
+                            <td class="tdclass">
+                                Service Tax <span class="LeftLabel" style="margin-left: 46%; margin-top: -2%;">0.00&nbsp;%</span>
+                            </td>
+                            <td class="tdalignclass" style="font-weight: normal !important; text-align: right;">
+                                0.00
+                            </td>
+                        </tr>
+                        <tr data-value="825.00">
+                            <td class="tdclass">
+                                Total
+                            </td>
+                            <td class="tdalignclass" align="right">
+                                825.00
+                            </td>
+                        </tr>
+                        <!--<tr data-value="0.00">
+                            <td colspan="2" class="tdclass">
+                                <span class="LeftLabel"></span>
+                            </td>
+                        </tr>-->
+                    </table>
+                </td>
+                <td style="vertical-align: top;" align="right" class="Line">
+                    <table style="width: 100%; line-height: 12px;">
+                        <tr>
+                            <td style="text-align: right;">
+                                <table style="width: 100%;font-size:10px; ">
+                                    <tr data-value="825.00">
+                                        <td class="tdclass" style="width: 73%; white-space: nowrap">
+                                            Total: (Rs)
+                                        </td>
+                                        <td>
+                                            <span class="GAmount">825.00 </span>
+                                        </td>
+                                    </tr>
+                                    <tr data-value="825.00">
+                                        <td style="width: 40%; white-space: nowrap">
+                                            Insured Amount
+                                        </td>
+                                        <td>
+                                            <span class="FS16 GAmount TAR">825.00 </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td colspan="2">
+                                <span class="tdclass SubTitle"></span>
+                            </td>
+                        </tr>
+                       <tr style="height: auto;" data-value="Eight Hundred  and Twenty Five ">
+                            <td colspan="2" class="tdclass">
+                            </td>
+                        </tr>-->
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="Line" style="height:2px;">
+                </td>
+            </tr>
+            <tr style="font-size: 10px;">
+                <td colspan="2" class="Line" style="vertical-align: top;padding:0px;">
+                    <table style="width: 100%; vertical-align: top;font-size:10px; ">
+                        <tr>
+                            <td style="width: 70%; vertical-align: top;">
+                                <span style="font-size:11px; font-weight:bold;">Rupees Three Hundred  and Twenty Five  only </span>
+                            </td>
+                            <td align="center">
+                                Signature & Stamp<br />
+                                <strong style="font-size: 11px;">DSOFT</strong><br />
+                                <span>Cashier</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="font-size: 10px;">
+                <td align="center" colspan="2">
+                    <span>End of Bill</span>
+                </td>
+            </tr>
+        </table>
+        <!--[ContentEnd]-->
+    </center>
+</body>
+</html> 

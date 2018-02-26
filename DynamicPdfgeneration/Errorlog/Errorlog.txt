@@ -1,0 +1,63 @@
+15/11/2017 12:16:34 PM    :   Invalid nested tag head found, expected closing tag meta.
+15/11/2017 12:18:02 PM    :   Invalid nested tag tbody found, expected closing tag tr.
+15/11/2017 12:18:55 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 12:19:48 PM    :   Element not allowed.
+15/11/2017 12:20:11 PM    :   Element not allowed.
+15/11/2017 12:21:08 PM    :   Element not allowed.
+15/11/2017 12:28:15 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 12:33:41 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 12:58:18 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 01:07:15 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 01:12:31 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 01:13:43 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 01:14:48 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/11/2017 02:31:31 PM    :   Invalid nested tag div found, expected closing tag br.
+15/11/2017 02:32:50 PM    :   Invalid nested tag div found, expected closing tag br.
+15/11/2017 02:33:20 PM    :   Invalid nested tag div found, expected closing tag img.
+16/11/2017 12:25:43 PM    :   Invalid nested tag tbody found, expected closing tag tr.
+16/11/2017 12:28:06 PM    :   Invalid nested tag head found, expected closing tag meta.
+16/11/2017 12:29:22 PM    :   Invalid nested tag tr found, expected closing tag td.
+16/11/2017 12:30:19 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:30:56 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:32:04 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:33:01 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:34:19 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:35:20 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:36:12 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:37:44 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:39:57 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:43:23 PM    :   Object reference not set to an instance of an object.
+16/11/2017 12:44:02 PM    :   Object reference not set to an instance of an object.
+16/11/2017 02:33:54 PM    :   Invalid nested tag head found, expected closing tag meta.
+17/11/2017 10:43:08 AM    :   Element not allowed.
+17/11/2017 10:43:54 AM    :   Element not allowed.
+17/11/2017 12:31:58 PM    :   Object reference not set to an instance of an object.
+22/11/2017 11:15:01 AM    :   Invalid nested tag div found, expected closing tag article.
+22/11/2017 11:15:25 AM    :   Invalid nested tag div found, expected closing tag article.
+22/11/2017 11:18:57 AM    :   Invalid nested tag div found, expected closing tag br.
+22/11/2017 11:19:40 AM    :   Invalid nested tag div found, expected closing tag br.
+22/11/2017 11:19:57 AM    :   Invalid nested tag div found, expected closing tag article.
+23/11/2017 04:38:19 PM    :   Object reference not set to an instance of an object.
+23/11/2017 04:41:03 PM    :   Object reference not set to an instance of an object.
+24/11/2017 10:12:21 AM    :   Unable to cast object of type 'iTextSharp.text.Paragraph' to type 'iTextSharp.text.Chunk'.
+24/11/2017 03:23:45 PM    :   Conversion from string "
+<p><table style="width: 100%; " to type 'Integer' is not valid.
+27/11/2017 02:18:54 PM    :   Invalid nested tag td found, expected closing tag tr.
+27/11/2017 02:29:20 PM    :   Invalid nested tag td found, expected closing tag tr.
+27/11/2017 05:41:59 PM    :   Could not find file 'D:\My Projects\R&D\DatamateFx40.Mediware.CAS.PdfGenerator\DynamicPdfgeneration\html\migrated.html'.
+27/11/2017 05:42:39 PM    :   Object reference not set to an instance of an object.
+27/11/2017 05:43:09 PM    :   Object reference not set to an instance of an object.
+28/11/2017 11:17:14 AM    :   Thread was being aborted.
+28/11/2017 11:18:39 AM    :   Thread was being aborted.
+28/11/2017 02:28:38 PM    :   Font '' with 'Identity-H' is not recognized.
+04/12/2017 11:59:25 AM    :   Invalid nested tag tr found, expected closing tag td.
+04/12/2017 12:05:53 PM    :   Invalid nested tag tr found, expected closing tag td.
+04/12/2017 12:09:49 PM    :   Invalid nested tag tr found, expected closing tag td.
+04/12/2017 12:11:17 PM    :   Invalid nested tag tr found, expected closing tag td.
+04/12/2017 12:12:01 PM    :   Invalid nested tag tr found, expected closing tag td.
+04/12/2017 12:19:05 PM    :   Invalid nested tag tr found, expected closing tag td.
+15/12/2017 01:37:24 PM    :   Invalid nested tag td found, expected closing tag img.
+08/02/2018 12:11:00 PM    :   Object reference not set to an instance of an object.
+08/02/2018 12:12:15 PM    :   Object reference not set to an instance of an object.
+08/02/2018 12:14:34 PM    :   Object reference not set to an instance of an object.
+08/02/2018 12:14:59 PM    :   Object reference not set to an instance of an object.

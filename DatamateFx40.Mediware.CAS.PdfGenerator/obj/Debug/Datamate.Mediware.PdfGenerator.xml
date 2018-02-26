@@ -1,0 +1,122 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Datamate.Mediware.PdfGenerator
+</name>
+</assembly>
+<members>
+<member name="P:Datamate.Mediware.PdfGenerator.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Datamate.Mediware.PdfGenerator.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Datamate.Mediware.PdfGenerator.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.DocPageSize">
+	<summary>
+ It defines the page type of pdf document.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Document Page Size</remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.DocPageHeight">
+	<summary>
+ Document page height in inch
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.DocPageWidth">
+	<summary>
+ document page width in inch
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.PageLeftMargin">
+	<summary>
+ Document left margin in inch.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.PageRightMargin">
+	<summary>
+ Document right margin in inch.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.PageTopMargin">
+	<summary>
+ Document Top Margin in Inch.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.PageBottomMargin">
+	<summary>
+ Document Bottom margin in inch.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.CssFileName">
+	<summary>
+ Css File Name
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.CssFileNames">
+	<summary>
+ List of css
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.CssFileData">
+	<summary>
+ Css File Data
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.SourceHtmlFileName">
+	<summary>
+ Html File Name
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.SourceHtmlString">
+	<summary>
+ Html file in string format.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.SourceHtmlStrings">
+	<summary>
+ List of Html files
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Datamate.Mediware.PdfGenerator.PdfGeneratorProperties.IsLandScape">
+	<summary>
+ true for landscape default false
+ </summary>
+	<value>True,False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

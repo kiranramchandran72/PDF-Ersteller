@@ -1,0 +1,1163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style type="text/css">
+        p
+        {
+            /*font-size: 14px !important;*/
+        }
+        .DisHead
+        {
+            font-weight: bold;
+            /* font-size: 12px !important;*/
+             font-style:italic;
+             margin-top:25px;
+             margin-bottom:5px;
+        }
+        table tr td
+        {
+            font-size: 13px !important;
+        }
+        #TblInfo tr td
+        {
+            font-size: 13px !important;
+        }
+        .TitleFont
+        {
+            font-size: 12px !important;
+        }
+        .content
+        {
+            margin-left:25px !important;
+        }
+        div
+        {
+            background-color:#fff !important;
+        }
+       
+       #DivGroup ~ table tbody tr:nth-child(1)
+          {
+              font-weight:bold !important;
+          }
+          
+          #DivGroup ~ table 
+          {
+              width:90% !important;
+          }
+          
+          #LabTable  > table tbody tr:nth-child(1)
+          {
+              font-weight:bold !important;
+          }
+          
+          #LabTable  > table 
+          {
+              width:90% !important;
+          }
+          
+          .DisHead ~ p:not(.DisHead)
+          {
+              margin-left:2%;
+          }
+          
+          .DisHead ~ div
+          {
+              margin-left:2% !important;
+          }
+          #DivDSPrepared > div
+          {
+              display:none;
+          }
+          #DivDSPrepared
+          {
+              border:none !important;
+          }
+          #TblDisSummary
+          {
+              display:none;
+          }
+         
+		 table tr > td.tddisbilldate
+         {
+             display:none !important;
+         }
+         h4.TableHead
+         {
+             background-color:White;
+             width:90%;
+         }
+         table.TableData
+         {
+             width:90% !important;
+         }
+         
+         table.TableData tr td.TableHead
+         {
+             background-color:White !important;
+         }
+         #divLabResult.clsfonsizerad
+         {
+             width:90%;
+             margin-left:5%;
+         }
+         #divRadiologyResults ~p.DisHead
+         {
+              margin-left:5%;
+         }
+          #divRadiologyResults ~p.DisHead ~p:not(.DisHead)
+         {
+              margin-left:9%;
+         }
+		
+		 #TblInfo tr, td{
+			    font-size: medium !important;
+		 }
+		 
+				 
+		.DisHead ~ p:not(.DisHead) {
+			    font-size: medium ;
+				line-height: medium ;
+				margin: 0px 20px ;
+		}
+    </style>
+
+</head>
+<body>
+<!--<PageSettings data ="PageSize:A4;Margin:1 0.5 1 1;Pagenumber:true;Pagenumberposition:right;linerequired:false;directprint:false;unicodefont:../Fonts/arialuni.ttf;debug:true;" -->
+<!--[ContentStart]-->
+<p><table style="width: 100%; color: #000000; font-family: Arial; margin-left: auto;
+            margin-right: auto; font-size: 14px !important;">
+            <tbody>
+                <tr>
+                    <td style="border-bottom: solid 1px #000">
+                        <p style="text-align: center">
+                            <img src='../Img/HospitalLogo.png' id='imgHospLogo' height="75" /><br />
+                            313,Mettupalayam Road, Coimbatore-641 043.<br />
+                            Email:srs@gangahospital.com, sr@gangahospital.com
+                            <br />
+                            Phone :0422-2485000
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding-top: 1%; padding-bottom: 1%; border-bottom: solid 1px #000">
+                        <table style="width: 100%; margin-top: -1%">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;width:33%">
+                                        <p class="TitleFont" style="margin-bottom: -2px;">
+                                            <b>Dr.J.G Shanmuganathan</b>
+                                            <br />
+                                            M.B.B.S ,DA(Lond)
+                                            <br />
+                                            Chairman
+                                        </p>
+                                    </td>
+                                    <td style="width:33%">
+                                        <p class="TitleFont" style="margin-bottom: -2px;">
+                                            <b>Dr.S Raja Sabapathy </b>
+                                            <br />
+                                            M.S(Gen),M.CH(Plastic),
+                                            <br />
+                                            Dip N.B(Plastic),F.R.C.S(Ed)<br />
+                                            Plastic Hand and Micro Surgeon
+                                        </p>
+                                    </td>
+                                    <td style="width:33%">
+                                        <p class="TitleFont" style="margin-bottom: -2px;">
+                                            <b>Dr. S Rajasekaran </b>
+                                            <br />
+                                            M.S(Ortho),D.Ortho,Dip N.B,
+                                            <br />
+                                            F.R.C.S(Ed),M.CH,Orth(Liverpool)<br />
+                                            Orthopaedic Surgeon
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</p>
+ <div style="height: 20px;">
+    </div>
+<p><table width='100%' border='0' class='HeaderStyle' cellspacing='0' cellpadding='1'> <tbody>
+<tr >
+<th style='text-align:center;font-size: medium;/*background-color: rgb(39, 147, 246);*/' colspan='6'><u><b>DISCHARGE SUMMARY</b></u></th>
+</tr></tbody>
+</table>
+</p>
+
+<div style="height: 10px;">
+    </div>
+
+<p><table id="TblInfo" width="100%" border="0" cellpadding="3">
+    <tbody>
+        <tr valign="top">
+            <td style="white-space:nowrap;width:16%;">
+                Patient Name
+            </td>
+            <td style="text-transform:lowercase !important; width:35%;">
+                <strong>: MR. PARAMESH  </strong>
+            </td>
+            <td style="width:15%;">
+                Patient ID
+            </td>
+            <td style="width:35%;">
+                <strong>: 1117113703</strong>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                Age/Sex
+            </td>
+            <td>
+                <strong>: 20 Years /Male</strong>
+            </td>
+            <td>
+                MLC
+            </td>
+            <td>
+                <strong>: Yes</strong>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                Guardian
+            </td>
+            <td style="text-transform:uppercase;">
+                <strong>: C/O.MR DHANDAPANI</strong>
+            </td>
+            <td>
+                Phone
+            </td>
+            <td>
+                : 9842553599
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                Address
+            </td>
+            <td>
+                : NO.2/43,NORTH STREET, PETHANAICKEN PATTY, PALANITK, DINDIGUL, TAMIL NADU, INDIA 
+            </td>
+            <td>
+                Pin Code
+            </td>
+            <td>
+                : 642615
+            </td>
+        </tr>
+        <tr valign="top">
+            <td colspan="4" style="border-bottom: 1px solid #000;">
+            </td>
+        </tr>
+        <tr valign="top">
+            <td colspan="4" style="height: 08px;">
+            </td>
+        </tr>
+        <tr valign="top">
+            <td class="Line2" nowrap>
+                Admitted On
+            </td>
+            <td class="Line2">
+                : 18/11/2017 11:5:15 AM
+            </td>
+            <td class="Line2" nowrap>
+               Admitting Unit
+            </td>
+            <td class="Line2">
+                <span class="tddisbilldate" style="white-space: normal;">: PROF. S RAJASEKARAN</span>
+            </td>
+        </tr>
+        <tr valign="top" >
+            <td style="white-space:nowrap;">
+                Discharged On
+            </td>
+            <td>
+                :  
+            </td>
+            <td>
+                Doctor
+            </td>
+            <td style="white-space: nowrap;">
+                : DR.DHEENADHAYALAN J<br/>
+DR.MOHAMED ZACKARIYA.J<br/>
+
+            </td>
+        </tr>
+		<tr valign="top" data-value='0'>
+            <td class="Line2">
+                 Expired on
+            </td>
+            <td class="Line2">
+                : 
+            </td>
+            <td>
+                Doctor
+            </td>
+            <td style="white-space: nowrap;">
+                : DR.DHEENADHAYALAN J<br/>
+DR.MOHAMED ZACKARIYA.J<br/>
+
+            </td>
+        </tr>
+        <tr valign="top">
+            <td style="white-space: nowrap;">
+                Ward/ Room
+            </td>
+            <td>
+                : 3 FLOOR EAST / 3EGW -17
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                IP Number
+            </td>
+            <td>
+                : 1117021006
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- Death Date : , Check out Date :  -->
+<table id='TableLine' width='100%' style='padding-bottom: 7px;'>
+<tr>
+<td style='width:30%;border-top:1px solid rgb(231, 231, 231);'></td>
+</tr>
+</table>
+<div style="height: 10px;">
+    </div></p>
+
+<p><p Class='DisHead'>Diagnosis</p>
+<p style='text-align:justify;' class='content'><p><strong>MAJOR CRUSH INJURY LEFT FOREARM WITH GROSS CONTAMINATION WITH ZONE IX, VIII LEVEL INJURY OF ALL EXTENSOR</strong></p>
+
+<p><strong>TENDONS WITH PARTIAL BICEPS INJURY WITH SEGMENTAL RADIUS, AND ULNA MIDDLE 3RD FRACTURE.</strong></p>
+
+<p>&nbsp;</p> </p>
+<p Class='DisHead'>Procedure</p>
+<p style='text-align:justify;' class='content'><p><strong>18.11.2017 : DEBRIDEMENT&nbsp;OF LEFT FOREARM&nbsp;+ PLATING&nbsp;BOTH BONES&nbsp;FOREARM.</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>21.11.2017 : DEBRIDEMENT&nbsp;OF LEFT&nbsp;FOREARM&nbsp;WITH&nbsp;ABDOMINAL&nbsp;FLAP COVER&nbsp;AND SSG.</strong></p>
+
+<p>&nbsp;</p> </p>
+<p Class='DisHead'>History And Presenting Complaints</p>
+<p style='text-align:justify;' class='content'><p>Alleged&nbsp;history&nbsp;of fall&nbsp;from&nbsp;Lorry&nbsp;while&nbsp;unloading&nbsp;and sustained&nbsp;injury&nbsp;to left forearm&nbsp;on 18.11.2017 at 06.45 a.m near&nbsp;Palani.</p>
+
+<p>Sustained injury&nbsp;severe&nbsp;crush&nbsp;injury&nbsp;to left&nbsp;upper limb.</p>
+
+<p>No history&nbsp;of head&nbsp;injury&nbsp;/&nbsp; loss&nbsp;of consciousness&nbsp;/ vomiting.</p>
+
+<p>No history&nbsp;of seizures&nbsp;/ ENT&nbsp;bleed.</p>
+
+<p>No history&nbsp;chest&nbsp;/ abdominal&nbsp;injury.</p>
+
+<p>No history&nbsp;of injury&nbsp;to other long&nbsp;bones.</p>
+
+<p>No known drug allergiies.</p>
+
+<p>No chronic illness.</p> </p>
+<p Class='DisHead'>Examination Findings</p>
+<p style='text-align:justify;' class='content'><p>Patient&nbsp;conscious&nbsp;and oriented.</p>
+
+<p>Afebrile.</p>
+
+<p>PR&nbsp; &nbsp; : 74/min.</p>
+
+<p>BP&nbsp; &nbsp; : 120/65mmHg.</p>
+
+<p>CVS&nbsp; &nbsp; : S1S2&nbsp;present.</p>
+
+<p>RS&nbsp; &nbsp; : Bilateral&nbsp;air&nbsp;entry&nbsp;equal.</p>
+
+<p>P/A&nbsp; &nbsp; : Soft,&nbsp;non&nbsp;tender.</p>
+
+<p>SPO2&nbsp;&nbsp;&nbsp;&nbsp;: 98 % with&nbsp;room&nbsp;air.</p>
+
+<p><strong>Injuries&nbsp;:</strong></p>
+
+<p>Severe&nbsp;crush&nbsp;involving&nbsp;entire&nbsp;forearm&nbsp;exposing&nbsp;underlying&nbsp;bone&nbsp;muscle.</p>
+
+<p>Laceration&nbsp;8 x 5x 2cm&nbsp;over&nbsp;medial&nbsp;aspect of left&nbsp;arm.</p>
+
+<p>Left&nbsp;forearm&nbsp;:</p>
+
+<p>Crush&nbsp;injury&nbsp;left&nbsp;forearm.</p>
+
+<p>Radial&nbsp;pulses&nbsp;felt.</p>
+
+<p>Weak&nbsp;finger&nbsp;movements&nbsp;seen.</p>
+
+<p>Bilateral&nbsp;clavicle&nbsp;normal.</p>
+
+<p>Chest&nbsp;compression&nbsp;test&nbsp;negative.</p>
+
+<p>Pelvic&nbsp;compression&nbsp;test negative.</p>
+
+<p>Pelvic&nbsp;distraction&nbsp;test&nbsp;negative.</p>
+
+<p>Spine&nbsp;tenderness&nbsp;test&nbsp;negative.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p> </p>
+<p Class='DisHead'>X-Ray Reports</p>
+<p style='text-align:justify;' class='content'><p>X RAY : LEFT FOREARMAP / LAT&nbsp; : SEGMENTAL FRACTURE RADIUS WITH FRACTURE ULNA WITH STYLOID FRACTURE.</p>
+
+<p>X RAY : LEFT HUMERUS AP / LAT : NO BONY INJURY.</p>
+
+<p>X RAY : CHEST : NO BONY INJURY.</p> </p>
+<p Class='DisHead'>Report on Investigations</p>
+<p style='text-align:justify;' class='content'><p>&nbsp;</p>
+
+<div style="padding: 0px; margin: 0px; user-select: none; color: rgb(0, 0, 0);  ">Investigation Results</div>
+
+<p style="padding: 0px; margin: 0px; color: rgb(0, 0, 0);  ">&nbsp;</p>
+
+<div id="DivGroup" style="padding: 0px; margin: 0px; user-select: none; color: rgb(0, 0, 0);  ">22/11/2017</div>
+
+<p style="padding: 0px; margin: 0px; color: rgb(0, 0, 0);  ">&nbsp;</p>
+
+<p style="padding: 0px; margin: 0px; color: rgb(0, 0, 0);  ">&nbsp;</p>
+
+<div style="padding: 0px; margin: 0px; user-select: none; color: rgb(0, 0, 0);  ">CLINICAL PATHOLOGY</div>
+
+<p style="padding: 0px; margin: 0px; color: rgb(0, 0, 0);  ">&nbsp;</p>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none; color: rgb(0, 0, 0);  ">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<thead style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td style="padding: 0px; margin: 0px; height: 1px;" width="30%"><b style="padding: 0px; margin: 0px;">Test Name</b></td>
+			<td style="padding: 0px; margin: 0px; height: 1px;" width="25%"><b style="padding: 0px; margin: 0px;">Result</b></td>
+			<td style="padding: 0px; margin: 0px; height: 1px;" width="15%"><b style="padding: 0px; margin: 0px;">Normal Value</b></td>
+			<td style="padding: 0px; margin: 0px; height: 1px;" width="10%"><b style="padding: 0px; margin: 0px;">Unit</b></td>
+			<td style="padding: 0px; margin: 0px; height: 1px;" width="10%"><b style="padding: 0px; margin: 0px;">Remarks</b></td>
+			<td style="padding: 0px; margin: 0px; height: 1px;" width="10%"><b style="padding: 0px; margin: 0px;">Advice</b></td>
+		</tr>
+	</thead>
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HAEMOGLOBIN</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">9.9</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">13.5-17</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">gms/dl</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HAEMATOCRIT (PCV)</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">30</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">40-50</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div id="DivGroup" style="padding: 0px; margin: 0px; user-select: none;">20/11/2017</div>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div style="padding: 0px; margin: 0px; user-select: none;">CLINICAL BIOCHEMISTRY</div>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM LACTATE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">1.8</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">0.5-2.2</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div id="DivGroup" style="padding: 0px; margin: 0px; user-select: none;">19/11/2017</div>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div style="padding: 0px; margin: 0px; user-select: none;">CLINICAL BIOCHEMISTRY</div>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM LACTATE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">2.4</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">0.5-2.2</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div id="DivGroup" style="padding: 0px; margin: 0px; user-select: none;">18/11/2017</div>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div style="padding: 0px; margin: 0px; user-select: none;">CLINICAL BIOCHEMISTRY</div>
+
+<p style="padding: 0px; margin: 0px;">&nbsp;</p>
+
+<div id="DivItem" style="padding: 0px; margin: 0px; user-select: none;">ELECTROLYTES</div>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM SODIUM</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">136</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">135-145</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM POTASSIUM</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">4</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">3.5-5.5</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM CHLORIDE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">102</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">96-106</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM LACTATE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">3.5</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">0.5-2.2</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<div id="DivItem" style="padding: 0px; margin: 0px; user-select: none;">ELECTROLYTES</div>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM SODIUM</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">135</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">135-145</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM POTASSIUM</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">4.22</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">3.5-5.5</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM CHLORIDE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">101</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">96-106</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<div id="DivItem" style="padding: 0px; margin: 0px; user-select: none;">COMPLETE BLOOD COUNT</div>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">TOTAL RBC COUNT</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">4.63</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">4.2-6</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">Milli/cmm</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HAEMOGLOBIN</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">10.2</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">13.5-17</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">gms/dl</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HAEMATOCRIT (PCV)</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">32.8</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">40-50</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MCV</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">71</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">78-100</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">fL</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MCH</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">22</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">27-31</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">pg</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MCHC</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">31.1</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">33-36</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">PLATELET COUNT</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">290000</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">150000-400000</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">cells/cumm</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">TOTAL WBC COUNT</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">12700</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">4000-10500</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">cells/cumm</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">NEUTROPHILS</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">88.9</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">40-65</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">LYMPHOCYTES</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">8.5</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">30-50</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MONOCYTES</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">1.7</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">2-8</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">EOSINOPHILS</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">0.8</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">2-6</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">BASOPHILS</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">0.1</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">0.1-1</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM LACTATE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">2.2</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">0.5-2.2</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mmol/L</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">BLOOD GLUCOSE (RANDOM)</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">119</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">80-160</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mg/dl</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">BLOOD UREA</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">15.7</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">10-45</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mg/dl</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">SERUM CREATININE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">0.7</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">0.5-1.5</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">mg/dl</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<div id="DivItem" style="padding: 0px; margin: 0px; user-select: none;">BLOOD GROUPING &amp; RH TYPING</div>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">ABO GROUPING</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">O</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<div id="DivItem" style="padding: 0px; margin: 0px; user-select: none;">COMPLETE BLOOD COUNT</div>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">TOTAL RBC COUNT</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">5.28</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">4.2-6</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">Milli/cmm</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HAEMOGLOBIN</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">10</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">13.5-17</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">gms/dl</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<div id="DivItem" style="padding: 0px; margin: 0px; user-select: none;">BLOOD GROUPING &amp; RH TYPING</div>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">RH TYPING</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">POSITIVE</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<div id="DivItem" style="padding: 0px; margin: 0px; user-select: none;">COMPLETE BLOOD COUNT</div>
+
+<div id="LabTable" style="padding: 0px; margin: 0px; user-select: none;">
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HAEMATOCRIT (PCV)</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">33.4</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">40-50</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MCV</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">63</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">78-100</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">fL</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MCH</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">19</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">27-31</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">pg</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MCHC</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">30</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">33-36</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">PLATELET COUNT</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">348000</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">150000-400000</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">cells/cumm</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">TOTAL WBC COUNT</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">20200</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">4000-10500</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">cells/cumm</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">NEUTROPHILS</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">85.1</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">40-65</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">LYMPHOCYTES</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">8.9</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">30-50</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">MONOCYTES</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">4.6</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">2-8</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">EOSINOPHILS</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%"><span style="padding: 0px; margin: 0px; color: red;">1.3</span></td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">2-6</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">BASOPHILS</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">0.1</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">0.1-1</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">%</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HIV I &amp; II</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">NonReactive(ECLIA Method)</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HCV</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">NonReactive(ECLIA Method)</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="0" class="repeatheader" repeat-header="yes" style="padding: 0px; margin: 0px; height: 1px;" width="100%">
+	<tbody style="padding: 0px; margin: 0px;">
+		<tr style="padding: 0px; margin: 0px; height: 1px;">
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="30%">HBSAG</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="25%">NonReactive(ECLIA Method)</td>
+            <td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="15%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+			<td class="tdclass" style="padding: 0px; margin: 0px; height: 1px;" width="10%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</p>
+<p Class='DisHead'>Treatment Consideration</p>
+<p style='text-align:justify;' class='content'><p>Require&nbsp;multiple&nbsp;procedures&nbsp;in view&nbsp;of severe&nbsp;crush injury&nbsp;left forearm.</p>
+
+<p>Stage&nbsp;1 : Debridement&nbsp;of muscles&nbsp;of forearm&nbsp;, bone&nbsp;stabilization&nbsp;of left.</p>
+
+<p>Stage&nbsp;2 : Soft&nbsp;tissue&nbsp;cover.</p>
+
+<p>Stage&nbsp;3, 4 : Depend&nbsp;on availabilty&nbsp;of muscles&nbsp;and&nbsp;deficit needs&nbsp;secondary&nbsp;reconstruction&nbsp;procedure&nbsp;to improve&nbsp;haved.</p>
+
+<p>&nbsp;</p> </p>
+<p Class='DisHead'>Operation Notes</p>
+<p style='text-align:justify;' class='content'><p><strong>18.11.2017 : DEBRIDEMENT OF LEFT FOREARM + PLATING BOTH BONES FOREARM.</strong></p>
+
+<p>&nbsp;</p>
+
+<p>Indication for surgery :</p>
+
+<p>Grossly contaminated wound with coal particles with extensive soft tissue injury over extensor aspect of left forearm with avulsed tendons from musculotendinous origin.</p>
+
+<p>Procedure :</p>
+
+<p>Patient in supine position under left brachial plexus block after draping and painting of left upper limb under tourniquet control dorsum of forearm wound debrided.&nbsp; There was gross contamination with coal particles.&nbsp; Found all extensor tendons avulsed from musculotendinous sites with crushed muscles with contamination which were debrided.&nbsp; All extensor tendons distally divided at the 1cm distal wrist.&nbsp; Bony edges scooped.&nbsp; Brachioradialis was found divided.&nbsp; Edges of bone found contaminated which needed scooping and trimming of bones.&nbsp; There was 3x 2 cm wound over volar aspect of distal forearm for which edges trimmed,found partial fraying of palmaris longus which was debrided.&nbsp; Flexor tendons are intact.&nbsp; Wound of about 12 x 5 cm resulted over dorsum of forearm with critical raw area needs soft tissue ( flap) cover on later date.&nbsp; Arm wound debrided found 30 % biceps muscle divided.&nbsp; &nbsp;Contamination present, debrided.&nbsp; Thorough wash with hydrogen peroxide and betadine given and tourniquet released.&nbsp; Hemostasis secured.</p>
+
+<p>Ortho notes :</p>
+
+<p>Patient received from plastic surgery team.&nbsp; Tourniquet inflated.&nbsp; All fracture end of radius freshened;&nbsp; Distal&nbsp; radius fragment dugged into middle fragment and held with hook reduction clamp and fixed with 6 holed 3.5 DCP with 3 proximal and 2 distal screw.&nbsp; Then proximal and middle fragemnt.&nbsp; Reduced adn held with hook reductionclamp and fixed with 8 holed 3.5 DCP with 3 proximal and 3 distal screws.&nbsp; Then both fractured end of ulna freshened andcut iwth saw and held with hook reduction clamp after reduction and fixed with 7 holed 3.5 DCP plate with 3 proximal and 3 distal screw.&nbsp; Wound wash given.&nbsp; Flap procedure to be done later.&nbsp; Sterile dressing pplied.&nbsp; Above elbow slab applied.&nbsp; After checking reduction under C arm.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>21.11.2017 : DEBRIDEMENT OF LEFT FOREARM WITH ABDOMINAL FLAP COVER AND SSG.</strong></p>
+
+<p>&nbsp;</p>
+
+<p>Patient&nbsp; under BP block with SAB in supine position.&nbsp; There is&nbsp; a critical defect over extensor aspect forearm extending from upper 1/3rd to wrist crease, with exposed implant.&nbsp; 7 x 5 ccm and 5 x 5 m defect over volar aspect arm and forearm respectively which is graftable.&nbsp; Forearm debrided.&nbsp; Planning done in reverse for lfap based on superficial pu------------------------, superficial circumflex iliac and superficial epigastric</p>
+
+<p>Flap was marked according to defect.&nbsp; Flap raised based on these pedicle 25 x 10 cm.&nbsp; Flap bleeding well after harvesting SSG ---- 30 x 18, 20 x 10, 20 x 10 cm harvested from left thigh and applied to left arm, forearm and flap donro site.&nbsp; Tie over dressing given.</p>
+
+<p>Flap inset into forearm defect with 3-0 ethilon.</p>
+
+<p>Haemostasis was ensured.</p>
+
+<p>Limb position was confirmed.</p>
+
+<p>Dressing done.</p>
+
+<p>Plan : Will need flap delay and division after 3 weeks.</p>
+
+<p>&nbsp;</p> </p>
+<p Class='DisHead'>Condition at Discharge</p>
+<p style='text-align:justify;' class='content'><p>Patient comfortable.&nbsp; Flap is healthy.&nbsp; Suture line is clean and intact.</p>
+
+<p>All sutures removed.</p>
+
+<p>Review on Tuesday ( 12.12.2017) for delay of flap.</p>
+
+<p>Divison on Tuesday ( 19.12.2017).</p>
+
+<p>&nbsp;</p> </p>
+<p Class='DisHead'>Advice on Discharge</p>
+<p style='text-align:justify;' class='content'><ul>
+	<li>Maintain hand position.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Medicine Details&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Morn&nbsp; &nbsp; Noon&nbsp; &nbsp; Even&nbsp; &nbsp; Night&nbsp; &nbsp; &nbsp; sos&nbsp; &nbsp;x&nbsp; &nbsp;Days<br />
+_________________________________________________________________</p>
+
+<p>&nbsp;</p>
+
+<p>T. Phexin 750 mg&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5 days</p>
+
+<p>&nbsp;</p>
+
+<p>T. Combiflam&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SOS for pain.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p> </p>
+<p Class='DisHead'>Review On/After</p>
+<p style='text-align:justify;' class='content'><p>&nbsp;</p>
+
+<p>To review&nbsp; on 12.12.2017 for Delay of flap.</p>
+
+<p><br />
+To report immediately if there is fever, severe pain, redness, swelling or discharge in the operated area . For urgent care and treatment related enquires.</p>
+
+<p>&nbsp;</p>
+
+<p>For further assistance please contact E mail id plasticsurgeryganga@yahoo.com while sending E-mail, please mention the patient&#39;s name and I.D number.&nbsp; Patient&#39;s ID number is printed in the right side corner of the first page of the discharge summary.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>Compiled by&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="white-space: pre;"> </span>&nbsp; &nbsp; &nbsp;&nbsp;<strong>&nbsp; &nbsp;Dr. M.Senthil Kumaran</strong></div>
+
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="white-space: pre;"> </span>&nbsp;Consultant - Plastic&nbsp; &amp; Reconstructive Microsurgeon</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><strong>Dr.S.Raja Sabapathy</strong></div>
+
+<div>Head of the Department</div>
+
+<div>Plastic, Hand and Micro Surgeon</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><strong>Dr. Madhu Periasamy</strong></p>
+
+<p>M.S.(Gen), DNB (Gen), MRCS (Ed), DNB (Plastic)<br />
+Consultant - Plastic Surgery<br />
+Reg No:68257</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Compiled by&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="white-space: pre;"> </span>&nbsp; &nbsp;<strong> Dr. J. Md. Zackariya</strong></p>
+
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="white-space:pre"> </span>&nbsp; &nbsp; &nbsp;Senior Registrar -Trauma Surgery</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><strong>Prof</strong>. S.Rajasekaran,Mch.,PhD</div>
+
+<div>Head of the Department</div>
+
+<div>Orthopaedic and Spine Surgery</div>
+
+<p>&nbsp;</p>
+</div>
+
+<div>(Prepared by Jayanthi).</div>
+
+<div>&nbsp;</div> </p>
+</p>
+<!--[ContentEnd]-->
+</body>
+</html>

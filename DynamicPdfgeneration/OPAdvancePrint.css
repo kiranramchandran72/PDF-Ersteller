@@ -1,0 +1,116 @@
+﻿@page {size:210mm 139.7mm;
+			margin-left:15mm;
+			margin-right:10mm;
+			margin-top:15mm;
+			margin-bottom:13mm;
+			orphans:4; widows:2;
+			}	
+	* {
+            font-family: Arial,Calibri,Tahoma !important;
+        }
+        table {
+            /*border-collapse: collapse;*/
+        }
+
+        .tdclass {
+            padding-top: .5em;
+            padding-bottom: .5em;
+            font-size: 14px;
+        }
+
+        .leftLabel {
+            width: 111px;
+            display: inline-block;
+			font-weight: bold;
+			font-size: 12px !important;
+        }
+		
+		.LeftLabel {
+            width: 111px;
+            display: inline-block;
+			font-weight: bold;
+			font-size: 12px !important;
+        }
+
+        .RightValue {
+            font-size: 12px;
+        }
+
+
+        #tblproList {
+            width: 100% !important;
+            margin-left: 0% !important;
+        }
+		table#tblproList tr th {
+			vertical-align:top;
+			white-space:nowrap;
+			background-color:rgb(125, 121, 121);
+			color:white;
+		}
+        table#tblproList tr td {
+            padding: 2px !important;
+            font-weight: normal;
+            color: black;
+        }
+
+        #tblproList thead tr {
+            background-color: #989898 !important;
+        }
+
+        table tr td {
+            color: black;
+			vertical-align:top;
+        }
+
+        .PatientInfo {
+            width: 100%;
+            line-height:3px;
+        }
+
+        .line {
+            border-bottom: 1px solid #b7b7b7;
+        }
+
+        .OuterTable {
+            border: 1px solid gray;
+        }
+
+        #tblproListt {
+            width: 85% !important;
+        }
+
+            #tblproListt th {
+                background-color: #ccc;
+                margin: 0px !important;
+                color: black !important;
+            }
+
+            #tblproListt td {
+                border-bottom: 1px solid gray;
+                margin: 0px !important;
+            }
+
+        @media print {
+            .OuterTable {
+                border: 1px solid white !important;
+            }
+        }
+
+        [data-value="0.00"], [data-value="0.0"], [data-value="0"], [data-value="0.000"], [data-value=""] {
+            display: none;
+        }
+
+        .PrntCancel {
+            color: #b30000;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .adress{
+            padding:0px;
+			line-height: 90%;
+            max-width: 100%;
+            white-space: pre-line;
+            font-size: 11px;
+			line-height:12px;
+        }

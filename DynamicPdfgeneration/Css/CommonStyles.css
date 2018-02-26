@@ -1,0 +1,274 @@
+﻿body 
+{
+    font-family:Arial,Verdana;
+    font-size:30px;
+}
+.tableclass
+{
+    border:1px solid gray;
+}
+
+.refheadclass
+{
+    display:none;
+    visibility:hidden;
+}
+
+.LBBTable tr td ,.LBTable tr th
+        {
+            border-bottom:1px solid #ccc; font-size:12px;
+        }
+
+.LBFTable tr td , .LBTable tr th
+        {
+            border:1px solid gray; font-size:12px;
+            line-height:20px;       
+        }
+        
+      /*  .LBBTable tr td[reptype="I"]
+        {
+           vertical-align:top !important;           
+        }
+         .LBBTable tr td[reptype="X"]
+        {
+           vertical-align:top !important;           
+        }*/
+        .GroupSepLine td
+        {            
+            border-bottom:1px solid #000 !important;
+        }
+                
+div,table td
+{
+    font-family:Arial,Verdana,sans-serif,Helvetica;
+    font-size:10pt;
+    background-color:#fff !important;
+    
+}
+table td
+{
+    padding:5px !important;
+     font-size:14px !important;
+}
+.HTitle{font-size:16px; font-weight:bold; line-height:14px; color:Maroon}
+.HAddress{font-size:10px; color:Gray; line-height:10px;}
+.DeliveryRemarks {font-size:12px !important;}
+.FooterNotes{font-size:10px !important; color:Gray !important;}
+#imgendoffile
+{
+    margin-top:150px;
+}
+.SpnGenType
+{
+    font-weight:bold;
+}
+.nodata
+{
+    color:White !important;
+}
+ol.olGrowth
+{
+    list-style-type:none;
+}
+
+.txtRepeater{
+    border:none;
+    width:90% ;
+    background-color :rgba(243, 243, 243, 0.73) ;
+}
+.txtRepeater:hover{
+background-color:rgba(245, 235, 209, .85);
+}
+
+.GrpClass
+{
+    text-align:center;
+    font-weight:bold;
+    /*border-bottom-color:#fff !important;*/
+}
+.spnRemarks
+{
+    color:black;
+    font-size:11px;
+    font-style: italic;
+}
+.LFlagHead
+{
+    color:#e3e3e3;
+}
+.LalertFlag
+{
+    color:Black;
+}
+.spnMethod
+{
+    color:black;
+    font-size:10px;
+    font-style: italic;
+}
+.lblMethod
+{
+    color:black;
+    
+}
+.lblRemarks
+{
+    color:black;
+    font-size:10px;
+    font-style: italic;
+    font-weight:bold;
+}
+
+
+#DivGroup ~ table tbody tr:nth-child(1)
+          {
+              font-weight:bold !important;
+          }
+          
+          #DivGroup ~ table 
+          {
+              width:90% !important;
+          }
+          
+          #LabTable  > table tbody tr:nth-child(1)
+          {
+              font-weight:bold !important;
+          }
+          
+          #LabTable  > table 
+          {
+              width:90% !important;
+          }
+          
+          .DisHead ~ p:not(.DisHead)
+          {
+              margin-left:2%;
+          }
+          
+          .DisHead ~ div
+          {
+              margin-left:2% !important;
+          }
+          #DivDSPrepared > div
+          {
+              display:none;
+          }
+          #DivDSPrepared
+          {
+              border:none !important;
+          }
+          #TblDisSummary
+          {
+              display:none;
+          }
+         
+		 table tr > td.tddisbilldate
+         {
+             display:none !important;
+         }
+         h4.TableHead
+         {
+             background-color:White;
+             width:90%;
+         }
+         table.TableData
+         {
+             width:90% !important;
+         }
+         
+         table.TableData tr td.TableHead
+         {
+             background-color:White !important;
+         }
+         #divLabResult.clsfonsizerad
+         {
+             width:90%;
+             margin-left:5%;
+         }
+         #divRadiologyResults ~p.DisHead
+         {
+              margin-left:5%;
+         }
+          #divRadiologyResults ~p.DisHead ~p:not(.DisHead)
+         {
+              margin-left:9%;
+         }
+		
+		 #TblInfo tr, td{
+			    font-size: medium !important;
+		 }
+		 
+		 .DisHead{ font-size:12pt !important; font-weight:bold;}
+		 
+		.DisHead ~ p:not(.DisHead) {
+			    font-size: 50px !important ;
+				line-height: medium ;
+				margin-left:20px;
+		}
+		p
+		{
+		    word-break: break-word;
+		}
+		
+		body{
+			font-size:14pt !important;
+		}
+        .tdDisc {
+            width: 50%;
+            text-transform: initial;
+        }
+
+        .tdName {
+            width: 15%;
+            /* padding-top:1%;  */
+        }
+		
+		body, h1, h2, h3, ol, ul, div {    
+		overflow: visible; }
+		
+        .tdComp {
+            width: 30%;
+            text-transform: initial;
+        }
+
+
+        #DivHead {
+            width: 24%;
+            text-decoration: underline;
+            /* text-decoration-style:solid;*/
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        ul li:before {
+            content: "•";
+            padding-right: 8px;
+            color: #08415d;
+            font-size: 1.5em;
+        }
+		.DisHead{
+			font-size: 12pt !important;
+			line-height: 16pt !important;
+			color: black;  
+		}
+	
+		
+		.Line2 {white-space:nowrap !important}
+		
+		.TableData { font-size:12px !important;}
+		#divLabResult{display:none;}
+		
+		#TblInfo{font-size:10pt !important;}
+        
+		#TblInfo tr td{font-size:10pt !important;}
+		.TitleFont {line-height:20px !important;text-align:center !important; vertical-align:top !important; font-size:14px !important;}
+		
+		#TblInfo tr td {line-height:10px !important;}
+		p.content
+		{
+		    margin-left:20px;
+		}
+		
+		
