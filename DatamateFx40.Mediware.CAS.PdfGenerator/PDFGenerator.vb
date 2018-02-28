@@ -148,9 +148,13 @@ Public MustInherit Class PdfGeneratorProperties
 
     Public Property SeperateHeader As Boolean = False
 
+    Protected Property MultipleFiles As Boolean = False
+
     Public MustOverride Function GeneratePdfDocument() As Document
     Public MustOverride Function GeneratePdfDocument(ByVal bool As Boolean) As MemoryStream
     Public MustOverride Function GeneratePdfDocument(ByVal bool As Boolean, ByVal bool1 As Boolean) As Byte()
+    Public MustOverride Function GenerateMultiplePdfDocument(ByVal bool As Boolean) As MemoryStream
+
 
     Enum DocumentPageSize
         A4
@@ -225,7 +229,10 @@ Public Class PDFGenerator
                 _FileData = SourceHtmlString
             End If
 
-            SetProperties(_FileData)
+            If Not MultipleFiles Then
+                SetProperties(_FileData)
+            End If
+
 
             Dim _LstCssFiles As New List(Of String)
 
@@ -322,7 +329,7 @@ Public Class PDFGenerator
 
     End Sub
 
-    Public Sub GenerateAndDownloadPdf(ByVal FileName As String, ByVal IsDownload As Boolean)
+    Public Sub GenerateAndDownloadPdf(ByVal FileName As String, ByVal IsDownload As Boolean, Optional ByVal IsMultiple As Boolean = False)
         Try
             HttpContext.Current.Response.ContentType = "application/pdf"
             If IsDownload Then
@@ -335,7 +342,15 @@ Public Class PDFGenerator
 
             HttpContext.Current.Response.ContentEncoding = Encoding.UTF8
 
-            HttpContext.Current.Response.Write(GeneratePdfDocument(True))
+            Me.MultipleFiles = IsMultiple
+
+            If IsMultiple Then
+                HttpContext.Current.Response.Write(GenerateMultiplePdfDocument(True))
+            Else
+                HttpContext.Current.Response.Write(GeneratePdfDocument(True))
+            End If
+
+
 
             HttpContext.Current.Response.HeaderEncoding = Encoding.UTF8
 
@@ -933,7 +948,6 @@ Public Class PDFGenerator
         End Try
     End Sub
 
-
     Public Sub GenerateDefaultPDF()
         Try
             Using document = New Document(PageSize.A4, 30, 30, 30, 30)
@@ -964,37 +978,6 @@ Public Class PDFGenerator
                 HttpContext.Current.ApplicationInstance.CompleteRequest()
             End Using
 
-
-            'HttpContext.Current.Response.Clear()
-            'HttpContext.Current.Response.Charset = ""
-            'HttpContext.Current.Response.ContentType = "application/pdf"
-            'Dim strFileName As String = "123" + ".pdf"
-            'HttpContext.Current.Response.AddHeader("Content-Disposition", Convert.ToString("inline; filename=") & strFileName)
-
-            'Dim outXml As String = "<html><body style='font-family: MYSYLFAEN;'>" & vbCr & vbLf & "            <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>" & vbCr & vbLf & "            eng-abc_arm-աբգ_rus-абв_eng-xyz <p>&diams; &larr;  &darr; &harr; &uarr; &rarr;&oslash; &euro; &copy;</p></body></html>"
-
-            'Dim memStream As New MemoryStream()
-
-            'Dim xmlString As TextReader = New StringReader(outXml)
-
-            'Using document As New Document()
-            '    Dim writer As PdfWriter = PdfWriter.GetInstance(document, memStream)
-            '    document.SetPageSize(iTextSharp.text.PageSize.A4)
-            '    document.Open()
-
-            '    FontFactory.Register("C:/Windows/Fonts/sylfaen.ttf", "MYSYLFAEN")
-
-            '    Dim byteArray As Byte() = System.Text.Encoding.UTF8.GetBytes(outXml)
-            '    Dim ms As New MemoryStream(byteArray)
-
-            '    XMLWorkerHelper.GetInstance().ParseXHtml(writer, document, ms, System.Text.Encoding.UTF8)
-
-            '    document.Close()
-            'End Using
-
-            'HttpContext.Current.Response.BinaryWrite(memStream.ToArray())
-            'HttpContext.Current.Response.[End]()
-            'HttpContext.Current.Response.Flush()
         Catch ex As Exception
 
         End Try
@@ -1007,6 +990,235 @@ Public Class PDFGenerator
         writer.Flush()
         stream.Position = 0
         Return stream
+    End Function
+
+
+    Public Overrides Function GenerateMultiplePdfDocument(ByVal bool As Boolean) As MemoryStream
+        'ExtractHtmlData()
+        Dim _doc = CreateMultiplePdfDocument()
+
+        Dim ms As New MemoryStream()
+        Dim sw As New StreamWriter(ms)
+        sw.Write(_doc)
+        sw.Flush()
+        ms.Position = 0
+
+        
+        Return ms
+    End Function
+    Private Function CreateMultiplePdfDocument() As Document
+        Try
+
+
+            SetProperties(SourceHtmlStrings(0))
+
+            Dim _PageSize As New Object()
+
+            Select Case DocPageSize
+                Case DocumentPageSize.A4
+                    _PageSize = PageSize.A4
+                Case DocumentPageSize.A5
+                    _PageSize = PageSize.A5
+                Case DocumentPageSize.Custom
+                    Me.PageHeight = DocPageHeight * 72
+                    Me.PageWidth = DocPageWidth * 72
+
+                    _PageSize = New Rectangle(PageWidth, PageHeight)
+                Case Else
+                    _PageSize = PageSize.A4
+            End Select
+
+            PageLeftMargin = PageLeftMargin * 72
+            PageRightMargin = PageRightMargin * 72
+            PageTopMargin = PageTopMargin * 72
+            PageBottomMargin = PageBottomMargin * 72
+
+            Dim _document As New Document(_PageSize, PageLeftMargin, PageRightMargin, PageTopMargin, PageBottomMargin)
+
+
+            If IsLandScape Then
+                _document.SetPageSize(_PageSize.Rotate())
+            End If
+
+
+
+
+            '_document.SetAccessibleAttribute
+            ' _document.
+            Dim _Pdfwriter As PdfWriter = PdfWriter.GetInstance(_document, HttpContext.Current.Response.OutputStream)
+
+            _document.AddAuthor("© Datamate Info Solutions ®")
+            _document.AddCreationDate()
+            _document.AddProducer()
+            _document.AddSubject("Dmate pdf Print")
+
+            Dim _pdfevent = New PdfPageClass(Me)
+
+            Select Case PageRotation
+                Case RotationMode.Portrait
+                    _pdfevent.SetOrientation(PdfPage.PORTRAIT)
+                Case RotationMode.Landscape
+                    _pdfevent.SetOrientation(PdfPage.LANDSCAPE)
+                Case RotationMode.InvertedPortrait
+                    _pdfevent.SetOrientation(PdfPage.INVERTEDPORTRAIT)
+                Case RotationMode.Seascape
+                    _pdfevent.SetOrientation(PdfPage.SEASCAPE)
+                Case Else
+                    _pdfevent.SetOrientation(PdfPage.PORTRAIT)
+            End Select
+
+            For Each strfiles As String In SourceHtmlStrings
+                SourceHtmlString = strfiles
+                ExtractHtmlData()
+                _pdfevent.HeaderData = HeaderData.Trim
+                _pdfevent.FooterData = FooterData.Trim
+                _pdfevent.ReportHeader = ReportHeader.Trim
+                _pdfevent.IsLandScape = IsLandScape
+
+
+                GetCssDataFromFile(CssFileNames, Me.CssFileData, CssFileName)
+
+                _pdfevent.CssFileData = Me.CssFileData
+
+                Dim msCssStream As New MemoryStream()
+                Dim _swCss As New StreamWriter(msCssStream)
+                _swCss.Write(CssFileData)
+                _swCss.Flush()
+                msCssStream.Position = 0
+
+                ''''Adding ReportHeader
+                Dim header As ElementList
+
+                header = _pdfevent.ParseHtmltoElements(HeaderData.Trim)
+
+                Dim rptheaderTbl As New PdfPTable(1)
+                rptheaderTbl.SetTotalWidth({_document.PageSize.Width - PageLeftMargin - PageRightMargin})
+
+                Dim RptCell As New PdfPCell()
+                RptCell.Border = 0
+
+                For Each e As IElement In header
+                    RptCell.AddElement(e)
+                Next
+
+                rptheaderTbl.AddCell(RptCell)
+
+                _pdfevent.ReportTable = rptheaderTbl
+
+                ''''Adding Header
+                Dim HeaderDataHtml = ReportHeader.Trim & HeaderData.Trim
+
+                header = _pdfevent.ParseHtmltoElements(HeaderDataHtml)
+
+                Dim headerTbl As New PdfPTable(1)
+                headerTbl.SetTotalWidth({_document.PageSize.Width - PageLeftMargin - PageRightMargin})
+
+                Dim cell As New PdfPCell()
+                cell.Border = 0
+
+                For Each e As IElement In header
+                    cell.AddElement(e)
+                Next
+
+                headerTbl.AddCell(cell)
+
+                _pdfevent.HeaderTable = headerTbl
+
+                ''''Adding Footer
+
+                header = _pdfevent.ParseHtmltoElements(FooterData.Trim)
+
+                Dim footerTbl As New PdfPTable(1)
+                footerTbl.SetTotalWidth({_document.PageSize.Width - PageLeftMargin - PageRightMargin})
+
+                Dim FooterCell As New PdfPCell()
+                FooterCell.Border = 0
+
+                For Each e As IElement In header
+                    FooterCell.AddElement(e)
+                Next
+
+                footerTbl.AddCell(FooterCell)
+
+                _pdfevent.FooterTable = footerTbl
+
+                _document.SetMargins(PageLeftMargin, PageRightMargin, PageTopMargin + headerTbl.TotalHeight(), PageBottomMargin + footerTbl.TotalHeight())
+
+                _Pdfwriter.PageEvent = _pdfevent
+
+                _pdfevent.NewPage(_document)
+
+                ''''' adding Content.
+
+                Dim _LitContent As New Literal()
+
+                _LitContent.Text = ContentData
+
+
+                Dim sw As New StringWriter()
+                Dim hw As New HtmlTextWriter(sw)
+                _LitContent.RenderControl(hw)
+                Dim sr As New StringReader(sw.ToString())
+
+                Dim cssResolver = New StyleAttrCSSResolver()
+
+                Dim cssFile As New Object()
+
+                cssFile = XMLWorkerHelper.GetCSS(msCssStream)
+                cssResolver.AddCss(cssFile)
+                msCssStream.Dispose()
+                msCssStream.Close()
+
+
+
+                _document.Open()
+
+
+                Dim _UnicodeFontFactory = New UnicodeFontFactory(UnicodeFont)
+
+                Dim cssAppliers As CssAppliers = New CssAppliersImpl(_UnicodeFontFactory)
+
+                Dim HtmlContext As New HtmlPipelineContext(cssAppliers)
+
+                HtmlContext.SetTagFactory(Tags.GetHtmlTagProcessorFactory)
+
+                Dim tagProcessors = DirectCast(Tags.GetHtmlTagProcessorFactory(), DefaultTagProcessorFactory)
+                tagProcessors.RemoveProcessor(HTML.Tag.IMG)
+                ' remove the default processor
+                tagProcessors.AddProcessor(HTML.Tag.IMG, New CustomImageTagProcessor())
+                tagProcessors.AddProcessor(HTML.Tag.TD, New TableDataProcessor())
+                ' use our new processor
+
+                HtmlContext.SetAcceptUnknown(True).AutoBookmark(True).SetTagFactory(tagProcessors)
+
+                Dim Pipeline As IPipeline = New CssResolverPipeline(cssResolver, New HtmlPipeline(HtmlContext, New PdfWriterPipeline(_document, _Pdfwriter)))
+
+                Dim Worker As XMLWorker = New XMLWorker(Pipeline, True)
+
+                Dim Parser As XMLParser = New XMLParser(True, Worker, Encoding.UTF8)
+
+                Dim htmlinput = GenerateStreamFromString(sw.ToString())
+
+                Parser.Parse(htmlinput, Encoding.UTF8)
+
+                Parser.Flush()
+
+
+
+
+                If DirectPrint Then
+                    'writer.AddJavaScript("this.print(true);", False)
+                    Dim action As New PdfAction(PdfAction.PRINTDIALOG)
+                    _Pdfwriter.SetOpenAction(action)
+                End If
+                _UnicodeFontFactory.DeleteFont()
+            Next
+            _document.Close()
+            Return _document
+        Catch ex As Exception
+            Me.ErrorString = ex.Message
+            Return Nothing
+        End Try
     End Function
 End Class
 
@@ -1052,8 +1264,8 @@ Friend Class PdfPageClass
     Dim template As PdfTemplate
     Dim cb As PdfContentByte
 
-    Dim pagecount As Integer = 0
-    Dim npagecount As Integer = 0
+    Dim pagecount As Integer = 1
+    Dim npagecount As Integer = -1
     Dim TotPagno As Integer = 0
     Dim bHeaderDrawn As Boolean = False
 
@@ -1144,12 +1356,15 @@ Friend Class PdfPageClass
         writer.AddPageDictEntry(PdfName.ROTATE, orientation)
         Try
             TotPagno = TotPagno + 1
-
+            Dim pageN As Integer = writer.PageNumber
             If Not myNewPage And SeprateHeader Then
                 bHeaderDrawn = True
                 HeaderTable = ReportTable
                 document.SetMargins(PageLeftMargin, PageRightMargin, PageTopMargin + ReportTable.TotalHeight(), PageBottomMargin + FooterTable.TotalHeight())
             End If
+
+            
+
 
             HeaderTable.WriteSelectedRows(0, 20, document.Left, document.PageSize.Top - PageTopMargin, writer.DirectContent)
             FooterTable.WriteSelectedRows(0, 20, document.Left, document.PageSize.Bottom + PageBottomMargin + FooterTable.TotalHeight(), writer.DirectContent)
@@ -1193,11 +1408,10 @@ Friend Class PdfPageClass
     Public Overrides Sub OnEndPage(ByVal writer As PdfWriter, ByVal document As Document)
         MyBase.OnEndPage(writer, document)
 
-        pagecount = pagecount + 1
+        Dim pageN As Integer = writer.PageNumber - npagecount
 
-        npagecount = pagecount
+        
 
-        Dim pageN As Integer = pagecount
         Dim text As String = "Page  " & pageN & "  of  "
         Dim len As Single = bf.GetWidthPoint(text, 6)
         Dim pageSize As Rectangle = document.PageSize
@@ -1275,11 +1489,12 @@ Friend Class PdfPageClass
             template.SetFontAndSize(bf, 7.5)
             template.SetTextMatrix(0, 0)
 
-            If TotPagno > pagecount Then
-                template.ShowText(Convert.ToString(pagecount))
-            Else
-                template.ShowText(Convert.ToString((writer.PageNumber - pagecount)))
-            End If
+            template.ShowText(Convert.ToString(writer.PageNumber - 1 - npagecount))
+            'If TotPagno > pagecount Then
+            '    template.ShowText(Convert.ToString(pagecount))
+            'Else
+            '    template.ShowText(Convert.ToString((writer.PageNumber - pagecount)))
+            'End If
 
             template.EndText()
 
@@ -1293,6 +1508,7 @@ Friend Class PdfPageClass
         Try
             document.NewPage()
             myNewPage = True
+            npagecount += 1
         Catch ex As Exception
 
         End Try
